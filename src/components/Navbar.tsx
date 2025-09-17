@@ -19,9 +19,10 @@ export default function Navbar() {
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center gap-2">
               <img
+                id="nav-logo"
                 src="/logo.png"
                 alt="Logo"
-                className="h-32 w-32"
+                className="h-32 w-32 object-contain"
               />
             </Link>
           </div>
