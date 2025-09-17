@@ -38,8 +38,19 @@ body {
 }
 
 .splash-logo {
-  width: 280px;
-  height: 280px;
+  width: 50vw;
+  height: auto;
   object-fit: contain;
   will-change: transform, opacity;
+}
+
+/* Navbar fade-in */
+.navbar-root {
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 1050ms ease, transform 1050ms ease;
+}
+.navbar-root.navbar-enter {
+  opacity: 1;
+  transform: translateY(0);
 }
